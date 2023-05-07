@@ -3,6 +3,11 @@
 
 const int ROWS = 50;
 const int COLUMS = 50;
+sf::Vector2i mousePosition;
+int startTileX = 0;
+int startTileY = 0;
+int endTileX = 0;
+int endTileY = 0;
 
 void initGrid(sf::RenderWindow& window, sf::RectangleShape grid[][COLUMS]);
 void drawGrid(sf::RenderWindow& window, sf::RectangleShape grid[][COLUMS]);
@@ -25,12 +30,29 @@ int main()
             {
                 window.close();
             }
-           else if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Escape){
-                window.close();
+            else if (event.type == sf::Event::KeyPressed){
+                switch (event.key.code) {
+                    case sf::Keyboard::Escape:
+                        window.close();
+                        break;
+                    case sf::Keyboard::Space:
+                        initGrid(window, grid);
+                        break;
+                    case sf::Keyboard::Num1:
+                        mousePosition = sf::Mouse::getPosition(window);
+                        startTileX = mousePosition.x/16;
+                        startTileY = mousePosition.y/16;
+                        grid[startTileX][startTileY].setFillColor(sf::Color::Green);
+                        break;
+                    case sf::Keyboard::Num2:
+                        mousePosition = sf::Mouse::getPosition(window);
+                        endTileX = mousePosition.x/16;
+                        endTileY = mousePosition.y/16;
+                        grid[endTileX][endTileY].setFillColor(sf::Color::Red);
+                        break;
+                }
             }
-           else if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Space){
-                initGrid(window, grid);
-           }
+
            else if (event.type == sf::Event::MouseButtonPressed && event.mouseButton.button == sf::Mouse::Right){
                 sf::Vector2i mousePosition = sf::Mouse::getPosition(window);
                 int tileX = mousePosition.x/16;

@@ -25,17 +25,24 @@ int main()
             {
                 window.close();
             }
-            if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Escape){
+           else if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Escape){
                 window.close();
             }
-            if (event.type == sf::Event::MouseButtonPressed){
-                if ( event.mouseButton.button == sf::Mouse::Right){
-                    sf::Vector2i mousePosition = sf::Mouse::getPosition(window);
-                    grid[mousePosition.x/16][mousePosition.y/16].setFillColor(sf::Color::Black);
-                    std::cout << mousePosition.x/15 << "\t" << mousePosition.y/15 << "\n";
-
-                }
-            }
+           else if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Space){
+                initGrid(window, grid);
+           }
+           else if (event.type == sf::Event::MouseButtonPressed && event.mouseButton.button == sf::Mouse::Right){
+                sf::Vector2i mousePosition = sf::Mouse::getPosition(window);
+                int tileX = mousePosition.x/16;
+                int tileY = mousePosition.y/16;
+                grid[tileX][tileY].setFillColor(sf::Color::Black);
+           }
+           else if (event.type == sf::Event::MouseMoved && sf::Mouse::isButtonPressed(sf::Mouse::Right)){
+                sf::Vector2i mousePosition = sf::Mouse::getPosition(window);
+                int tileX = mousePosition.x/16;
+                int tileY = mousePosition.y/16;
+                grid[tileX][tileY].setFillColor(sf::Color::Black);
+           }
         }
 
         window.clear();
@@ -73,3 +80,4 @@ void drawTiles(sf::RenderWindow& window, sf::RectangleShape tile){
     tile.setFillColor(sf::Color::Black);
 }
 
+//std::cout << mousePosition.x/15 << "\t" << mousePosition.y/15 << "\n";

@@ -102,4 +102,14 @@ void drawTiles(sf::RenderWindow& window, sf::RectangleShape tile){
     tile.setFillColor(sf::Color::Black);
 }
 
+void drawBFS(sf::RectangleShape grid[][]){
+    if(startTileX + 1 < 51)
+        
+
+}
+
+sf::RectangleShape tileNeighborUp(int x, int y, sf::RectangleShape grid[][]){
+    return grid[x][y/50];
+}
+
 //std::cout << mousePosition.x/15 << "\t" << mousePosition.y/15 << "\n";

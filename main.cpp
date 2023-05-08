@@ -72,7 +72,6 @@ int main()
                         randomMaze(window, grid);
                         break;
                     case sf::Keyboard::F1:
-                        createGraph();
                         Node* start = &nodeGrid[startTileX][startTileY];
                         Node* end = &nodeGrid[endTileX][endTileY];
                         bfs(start, end, window, grid);
@@ -150,6 +149,7 @@ void createGraph() {
 }
 
 void bfs(Node* start, Node* end, sf::RenderWindow& window, sf::RectangleShape grid[][COLUMNS]) {
+    createGraph();
     std::queue<Node*> q;
     q.push(start);
 

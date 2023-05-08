@@ -93,7 +93,11 @@ void initGrid(sf::RenderWindow& window, sf::RectangleShape grid[][COLUMS]){
         {
             grid[i][j].setPosition(sf::Vector2f(16.0f * i, 16.0f * j));
             grid[i][j].setSize(sf::Vector2f(15.0f, 15.0f));
-            grid[i][j].setFillColor(sf::Color::White);
+            if (i == 0 || j == 0 || i == ROWS - 1 || j == COLUMS - 1){
+                grid[i][j].setFillColor(sf::Color::Black);
+            } else{
+                grid[i][j].setFillColor(sf::Color::White);
+            }
         }
     }
 }
@@ -102,7 +106,7 @@ void drawTiles(sf::RenderWindow& window, sf::RectangleShape tile){
     tile.setFillColor(sf::Color::Black);
 }
 
-void drawBFS(sf::RectangleShape grid[][]){
+/*void drawBFS(sf::RectangleShape grid[][]){
     if(startTileX + 1 < 51)
         
 
@@ -110,6 +114,6 @@ void drawBFS(sf::RectangleShape grid[][]){
 
 sf::RectangleShape tileNeighborUp(int x, int y, sf::RectangleShape grid[][]){
     return grid[x][y/50];
-}
+}*/
 
 //std::cout << mousePosition.x/15 << "\t" << mousePosition.y/15 << "\n";

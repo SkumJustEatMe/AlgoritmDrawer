@@ -15,9 +15,10 @@ struct Node {
     int x, y;
     bool visited = false;
     std::vector<Node*> neighbors;
+    Node* parent;
 
     Node() : x(0), y(0), visited(false) {}
-    Node(int x, int y) : x(x), y(y), visited(false) {}
+    Node(int x, int y) : x(x), y(y), visited(false), parent(nullptr) {}
 };
 
 Node nodeGrid[ROWS][COLUMS];
@@ -26,11 +27,10 @@ void createGraph();
 void bfs(Node* start, Node* end, sf::RenderWindow& window, sf::RectangleShape grid[][COLUMS]);
 void initGrid(sf::RenderWindow& window, sf::RectangleShape grid[][COLUMS]);
 void drawGrid(sf::RenderWindow& window, sf::RectangleShape grid[][COLUMS]);
-void drawTiles(sf::RenderWindow& window, sf::RectangleShape tile);
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(800, 800), "Algo");
+    sf::RenderWindow window(sf::VideoMode(800, 800), "Algoritme Drawer");
     sf::RectangleShape grid[ROWS][COLUMS];
 
     initGrid(window, grid);
@@ -122,10 +122,6 @@ void initGrid(sf::RenderWindow& window, sf::RectangleShape grid[][COLUMS]){
     }
 }
 
-void drawTiles(sf::RenderWindow& window, sf::RectangleShape tile){
-    tile.setFillColor(sf::Color::Black);
-}
-
 void createGraph() {
     for (int i = 0; i < ROWS; i++) {
         for (int j = 0; j < COLUMS; j++) {
@@ -157,6 +153,18 @@ void bfs(Node* start, Node* end, sf::RenderWindow& window, sf::RectangleShape gr
 
         if(grid[current->x][current->y].getFillColor() != sf::Color::Black){
             if (current == end) {
+                std::vector<Node*> path;
+                for (Node* node = end; node != nullptr; node = node->parent) {
+                    path.push_back(node);
+                }
+                std::reverse(path.begin(), path.end());
+
+                for (Node* node : path) {
+                    grid[node->x][node->y].setFillColor(sf::Color::Yellow);
+                    window.draw(grid[node->x][node->y]);
+                }
+                window.display();
+
                 return;
             }
 
@@ -164,20 +172,20 @@ void bfs(Node* start, Node* end, sf::RenderWindow& window, sf::RectangleShape gr
                 continue;
             }
             current->visited = true;
+
             if(current != start){
-                grid[current->x][current->y].setFillColor(sf::Color::Cyan);
+                grid[current->x][current->y].setFillColor(sf::Color::Blue);
                 window.draw(grid[current->x][current->y]);
                 window.display();
             }
-            
+
             for (Node* neighbor : current->neighbors) {
                 if (!neighbor->visited) {
+                    neighbor->parent = current; // set parent pointer
                     q.push(neighbor);
                 }
             }
         }
-
-
     }
 }
 

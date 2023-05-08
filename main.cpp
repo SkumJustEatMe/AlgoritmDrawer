@@ -1,5 +1,7 @@
 #include <iostream>
+#include <queue>
 #include <SFML/Graphics.hpp>
+#include <thread>
 
 const int ROWS = 50;
 const int COLUMS = 50;
@@ -9,6 +11,19 @@ int startTileY = 0;
 int endTileX = 0;
 int endTileY = 0;
 
+struct Node {
+    int x, y;
+    bool visited = false;
+    std::vector<Node*> neighbors;
+
+    Node() : x(0), y(0), visited(false) {}
+    Node(int x, int y) : x(x), y(y), visited(false) {}
+};
+
+Node nodeGrid[ROWS][COLUMS];
+
+void createGraph();
+void bfs(Node* start, Node* end, sf::RenderWindow& window, sf::RectangleShape grid[][COLUMS]);
 void initGrid(sf::RenderWindow& window, sf::RectangleShape grid[][COLUMS]);
 void drawGrid(sf::RenderWindow& window, sf::RectangleShape grid[][COLUMS]);
 void drawTiles(sf::RenderWindow& window, sf::RectangleShape tile);
@@ -50,6 +65,11 @@ int main()
                         endTileY = mousePosition.y/16;
                         grid[endTileX][endTileY].setFillColor(sf::Color::Red);
                         break;
+                    case sf::Keyboard::F1:
+                        createGraph();
+                        Node* start = &nodeGrid[startTileX][startTileY];
+                        Node* end = &nodeGrid[endTileX][endTileY];
+                        bfs(start, end, window, grid);
                 }
             }
 
@@ -106,14 +126,59 @@ void drawTiles(sf::RenderWindow& window, sf::RectangleShape tile){
     tile.setFillColor(sf::Color::Black);
 }
 
-/*void drawBFS(sf::RectangleShape grid[][]){
-    if(startTileX + 1 < 51)
-        
+void createGraph() {
+    for (int i = 0; i < ROWS; i++) {
+        for (int j = 0; j < COLUMS; j++) {
+            nodeGrid[i][j] = Node(i, j);
 
+            if (i > 0) {
+                nodeGrid[i][j].neighbors.push_back(&nodeGrid[i - 1][j]);
+            }
+            if (j > 0) {
+                nodeGrid[i][j].neighbors.push_back(&nodeGrid[i][j - 1]);
+            }
+            if (i < ROWS - 1) {
+                nodeGrid[i][j].neighbors.push_back(&nodeGrid[i + 1][j]);
+            }
+            if (j < COLUMS - 1) {
+                nodeGrid[i][j].neighbors.push_back(&nodeGrid[i][j + 1]);
+            }
+        }
+    }
 }
 
-sf::RectangleShape tileNeighborUp(int x, int y, sf::RectangleShape grid[][]){
-    return grid[x][y/50];
-}*/
+void bfs(Node* start, Node* end, sf::RenderWindow& window, sf::RectangleShape grid[][COLUMS]) {
+    std::queue<Node*> q;
+    q.push(start);
+
+    while (!q.empty()) {
+        Node* current = q.front();
+        q.pop();
+
+        if(grid[current->x][current->y].getFillColor() != sf::Color::Black){
+            if (current == end) {
+                return;
+            }
+
+            if (current->visited) {
+                continue;
+            }
+            current->visited = true;
+            if(current != start){
+                grid[current->x][current->y].setFillColor(sf::Color::Cyan);
+                window.draw(grid[current->x][current->y]);
+                window.display();
+            }
+            
+            for (Node* neighbor : current->neighbors) {
+                if (!neighbor->visited) {
+                    q.push(neighbor);
+                }
+            }
+        }
+
+
+    }
+}
 
 //std::cout << mousePosition.x/15 << "\t" << mousePosition.y/15 << "\n";

@@ -131,6 +131,21 @@ CMakeFiles/MANAlgo.dir/main.cpp.obj: C:/Users/SkumJustEatMe/CLionProjects/Algori
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/ostream.tcc \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/istream \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/istream.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/queue \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/deque \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/stl_construct.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/stl_uninitialized.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/utility \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/stl_relops.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/stl_deque.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/deque.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/vector \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/stl_vector.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/stl_bvector.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/vector.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/stl_heap.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/stl_queue.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/uses_allocator.h \
   C:/SFML/include/SFML/Graphics.hpp \
   C:/SFML/include/SFML/Window.hpp \
   C:/SFML/include/SFML/System.hpp \
@@ -149,13 +164,9 @@ CMakeFiles/MANAlgo.dir/main.cpp.obj: C:/Users/SkumJustEatMe/CLionProjects/Algori
   C:/SFML/include/SFML/System/String.hpp \
   C:/SFML/include/SFML/System/Utf.hpp \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/algorithm \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/utility \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/stl_relops.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/stl_algo.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/algorithmfwd.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/stl_heap.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/stl_tempbuf.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/stl_construct.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/uniform_int_dist.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/locale \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/locale_facets_nonio.h \
@@ -174,7 +185,6 @@ CMakeFiles/MANAlgo.dir/main.cpp.obj: C:/Users/SkumJustEatMe/CLionProjects/Algori
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/unique_ptr.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/tuple \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/array \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/uses_allocator.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/invoke.h \
   C:/SFML/include/SFML/System/Utf.inl \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/iterator \
@@ -202,11 +212,6 @@ CMakeFiles/MANAlgo.dir/main.cpp.obj: C:/Users/SkumJustEatMe/CLionProjects/Algori
   C:/SFML/include/SFML/Window/Sensor.hpp \
   C:/SFML/include/SFML/Window/Touch.hpp \
   C:/SFML/include/SFML/Window/VideoMode.hpp \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/vector \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/stl_uninitialized.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/stl_vector.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/stl_bvector.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/vector.tcc \
   C:/SFML/include/SFML/Window/Window.hpp \
   C:/SFML/include/SFML/Window/WindowHandle.hpp \
   C:/SFML/include/SFML/Window/WindowStyle.hpp \
@@ -247,7 +252,23 @@ CMakeFiles/MANAlgo.dir/main.cpp.obj: C:/Users/SkumJustEatMe/CLionProjects/Algori
   C:/SFML/include/SFML/Graphics/Glsl.inl \
   C:/SFML/include/SFML/Graphics/Sprite.hpp \
   C:/SFML/include/SFML/Graphics/Text.hpp \
-  C:/SFML/include/SFML/Graphics/VertexBuffer.hpp
+  C:/SFML/include/SFML/Graphics/VertexBuffer.hpp \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/thread \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/chrono \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/ratio \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/parse_numbers.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/memory \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/stl_raw_storage_iter.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/ext/concurrence.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/unique_ptr.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/shared_ptr.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/shared_ptr_base.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/allocated_ptr.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/refwrap.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/shared_ptr_atomic.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/atomic_base.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/atomic_lockfree_defines.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward/auto_ptr.h
 
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/ext/type_traits.h:
@@ -255,6 +276,8 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/ext/type_traits.h:
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/tuple:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/iosfwd:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward/auto_ptr.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32/bits/c++config.h:
 
@@ -349,6 +372,8 @@ C:/SFML/include/SFML/Graphics/Shape.hpp:
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/clocale:
 
 C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/queue:
 
 C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h:
 
@@ -462,6 +487,8 @@ C:/mingw64/x86_64-w64-mingw32/include/process.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/corecrt_startup.h:
 
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/parse_numbers.h:
+
 C:/SFML/include/SFML/System/Thread.inl:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed/limits.h:
@@ -572,9 +599,35 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/ostream.tcc:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/istream:
 
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/thread:
+
 C:/SFML/include/SFML/Window/Context.hpp:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/istream.tcc:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/deque:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/stl_uninitialized.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/utility:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/stl_deque.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/deque.tcc:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/vector:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/stl_bvector.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/memory:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/stl_heap.h:
+
+C:/mingw64/x86_64-w64-mingw32/include/_timeval.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/stl_queue.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/uses_allocator.h:
 
 C:/SFML/include/SFML/Window.hpp:
 
@@ -612,13 +665,9 @@ C:/SFML/include/SFML/System/Utf.hpp:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/algorithm:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/utility:
-
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/stl_algo.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/algorithmfwd.h:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/stl_heap.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/stl_tempbuf.h:
 
@@ -630,8 +679,6 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/locale_facets_nonio
 
 C:/mingw64/x86_64-w64-mingw32/include/time.h:
 
-C:/mingw64/x86_64-w64-mingw32/include/_timeval.h:
-
 C:/mingw64/x86_64-w64-mingw32/include/pthread_time.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h:
@@ -642,11 +689,11 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/unique_ptr.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/array:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/uses_allocator.h:
-
 C:/SFML/include/SFML/System/Utf.inl:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/iterator:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/atomic_base.h:
 
 C:/SFML/include/SFML/Graphics/Glsl.hpp:
 
@@ -658,6 +705,8 @@ C:/SFML/include/SFML/System/Thread.hpp:
 
 C:/SFML/include/SFML/System/ThreadLocal.hpp:
 
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/allocated_ptr.h:
+
 C:/SFML/include/SFML/System/ThreadLocalPtr.hpp:
 
 C:/SFML/include/SFML/System/ThreadLocalPtr.inl:
@@ -667,6 +716,8 @@ C:/SFML/include/SFML/System/Vector2.hpp:
 C:/SFML/include/SFML/System/Vector2.inl:
 
 C:/SFML/include/SFML/System/Vector3.inl:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/shared_ptr_base.h:
 
 C:/SFML/include/SFML/Window/Clipboard.hpp:
 
@@ -683,12 +734,6 @@ C:/SFML/include/SFML/Window/Keyboard.hpp:
 C:/SFML/include/SFML/Window/Mouse.hpp:
 
 C:/SFML/include/SFML/Window/VideoMode.hpp:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/vector:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/stl_uninitialized.h:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/stl_bvector.h:
 
 C:/SFML/include/SFML/Window/Window.hpp:
 
@@ -737,3 +782,19 @@ C:/SFML/include/SFML/Graphics/RenderWindow.hpp:
 C:/SFML/include/SFML/Graphics/Sprite.hpp:
 
 C:/SFML/include/SFML/Graphics/VertexBuffer.hpp:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/chrono:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/ratio:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/stl_raw_storage_iter.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/ext/concurrence.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/shared_ptr.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/refwrap.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/shared_ptr_atomic.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/atomic_lockfree_defines.h:
